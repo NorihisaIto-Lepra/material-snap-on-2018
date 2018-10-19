@@ -1,22 +1,7 @@
 <template>
-  <span>2018 レプラホーン株式会社　伊藤仁久</span>
-  <!-- 
-  <v-layout row wrap>
-    <v-btn round
-      color="accent"
-      @click="clickBack"
-    >
-      BACK
-    </v-btn>
-    <v-btn round
-      color="accent"
-      @click="clickNext"
-    >
-      NEXT
-    </v-btn>
-
-  </v-layout>
-    -->
+  <div class="footer-message">
+    <span>Snap-On By Norihisa Ito @2018/10/24</span>
+  </div>
 </template>
 
 <script>
@@ -32,3 +17,9 @@
     }
   }
 </script>
+
+<style scoped>
+  .footer-message {
+    padding-left: 24px;
+  }
+</style>

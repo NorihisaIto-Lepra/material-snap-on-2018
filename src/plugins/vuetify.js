@@ -5,10 +5,10 @@ import colors from 'vuetify/es5/util/colors'
 
 Vue.use(Vuetify, {
   theme: {
-    primary: colors.blue.base,
-    secondary: colors.lime.base,
-    background: colors.lime.lighten5,
-    selected: colors.lime.lighten3,
+    primary: colors.purple.base,
+    secondary: colors.indigo.base,
+    background: colors.grey.lighten1,
+    selected: colors.orange.lighten1,
     accent: colors.orange.accent3,
     error: '#FF5252',
     info: '#2196F3',

@@ -33,12 +33,32 @@ export default {
         },
         {
           icon: 'description',
-          title: 'Description',
+          title: '概要',
           path: '/description',
         },
         {
+          icon: 'edit',
+          title: 'なぜ学ぶのか',
+          path: '/learn',
+        },
+        {
+          icon: 'pageview',
+          title: '見た目',
+          path: '/user-interface',
+        },
+        {
+          icon: 'mood_bad',
+          title: '問題点',
+          path: '/problem',
+        },
+        {
+          icon: 'mood',
+          title: '解決策＆今回の狙い',
+          path: '/solution',
+        },
+        {
           icon: 'book',
-          title: 'Sample',
+          title: 'サンプル',
           path: '/sample',
         },
       ],

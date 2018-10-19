@@ -1,34 +1,45 @@
 <template>
-  <v-container fluid>
-    <v-slide-y-transition mode="out-in">
-      <v-layout column align-center>
-        <img src="@/assets/logo.png" alt="Vuetify.js" class="mb-5">
+  <v-container fluid  transition="slide-x-reverse-transition">
+    <v-layout column align-center>
+      <div class="title-area">
         <blockquote>
-          &#8220;Vue.js + Vuetifyと学ぶ Material Designとの付き合い方 &#8221;
-          <footer>
-            <small>
-              <em>2018/10 レプラホーン株式会社 伊藤仁久</em>
-            </small>
-          </footer>
+          <h2 class="display-4 home-title">Hello, Material Design</h2>
+          <h4 class="display-3 font-weight-thin home-title">WITH Vue.js & Vuetify</h4>
         </blockquote>
-      </v-layout>
-    </v-slide-y-transition>
+      </div>
+      <img src="@/assets/logo.png" alt="Vuetify.js" class="mt-5">
+      <v-btn large
+        class="mt-5"
+        color="accent"
+        @click="clickStart"
+      >
+        Let's START !
+      </v-btn>
+    </v-layout>
   </v-container>
 </template>
 
+<script>
+  export default {
+    created() {
+      this.$store.dispatch('navigation/changeDisplayFixedButton', false);
+      //this.$store.dispatch('navigation/setNextPageName', 'Description');
+    },
+    methods: {
+      clickStart() {
+        this.$router.push({ name:'Description' });
+      }
+    }
+  }
+
+
+</script>
+
 <style scoped>
-h1, h2 {
-  font-weight: normal;
+.title-area {
+  margin: auto;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+.home-title {
+  font-family: 'exo', 'Roboto', sans-serif !important;
 }
 </style>
